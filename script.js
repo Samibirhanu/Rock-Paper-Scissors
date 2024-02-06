@@ -7,7 +7,7 @@ function getComputerChoice(){
     const rock = "Rock";
     const paper = "Paper";
     const scissor = "scissor";
-    // return rock if 0, paperb 1, scissor 2 with if statment
+    // return rock if 0, paper 1, scissor 2 with if statment
     if (random == 0){
         return rock;
     } 
