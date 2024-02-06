@@ -1,6 +1,6 @@
 // get computer choice
 function getComputerChoice(){
-    // this will give us random number 0 to 100
+    // this will give us random number 0 to 2
     const random = Math.floor(Math.random() * 3);
     // create variable for rock paper scissor
   
