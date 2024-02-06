@@ -1,22 +1,24 @@
 // get computer choice
 function getComputerChoice(){
     // this will give us random number 0 to 100
-    const random = Math.floor(Math.random() * 100);
+    const random = Math.floor(Math.random() * 3);
     // create variable for rock paper scissor
+    console.log(random);
     const rock = "Rock";
     const paper = "Paper";
     const scissor = "scissor";
-    // return rock if 1 - 30, paper  31 - 60, scissor  61 to 90 with if statment
-    if (random <= 30){
+    // return rock if 0, paperb 1, scissor 2 with if statment
+    if (random == 0){
         return rock;
     } 
-    else if(random > 30 && random <= 60){
+    else if(random == 1){
         return paper;
     }
     else
         return scissor;
-        
+
 }
+console.log(getComputerChoice());
 
 
 
