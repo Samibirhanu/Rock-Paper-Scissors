@@ -3,7 +3,7 @@ function getComputerChoice(){
     // this will give us random number 0 to 100
     const random = Math.floor(Math.random() * 3);
     // create variable for rock paper scissor
-    console.log(random);
+  
     const rock = "Rock";
     const paper = "Paper";
     const scissor = "scissor";
@@ -18,7 +18,16 @@ function getComputerChoice(){
         return scissor;
 
 }
-console.log(getComputerChoice());
+
+
+// Get player selection
+
+function playerSelection(){
+    // input from user with prompt function
+    const input = prompt("Enter Your choice");
+    
+}
+
 
 
 
