@@ -24,10 +24,10 @@ function getComputerChoice(){
 
 function playerSelection(){
     // input from user with prompt function and make it lowercase
-    const input = prompt("Enter Your choice").toLowerCase();
+    const userInput = prompt("Enter Your choice").toLowerCase();
     // only take rock paper scissor unless alert message
-    if (input == "rock" || input == "paper" || input == "scissor"){
-        return input;
+    if (userInput == "rock" || userInput == "paper" || userInput == "scissor"){
+        return userInput;
     } else
         console.log("The user input can be only rock paper and scissors !!");
 }
