@@ -5,7 +5,7 @@ function getComputerChoice(){
     // create variable for rock paper scissor
   
     const rock = "rock";
-    const paper = "Paper";
+    const paper = "paper";
     const scissor = "scissor";
     // return rock if 0, paper 1, scissor 2 with if statment
     if (random == 0){
@@ -22,7 +22,7 @@ function getComputerChoice(){
 
 // Get player selection
 
-function playerSelection(){
+function GetUserChoice(){
     // input from user with prompt function and make it lowercase
     const userInput = prompt("Enter Your choice").toLowerCase();
     // only take rock paper scissor unless alert message
@@ -34,21 +34,20 @@ function playerSelection(){
 
 // single round play of computer and user 
 //create a function that plays single round that taks two parameters
-function singleRoundPlay(userSelection, computerSelection){
-    // asign the parameters to computer choise and player selection function 
-    userSelection = playerSelection();
-    computerSelection = getComputerChoice();
-    // check the parametrs 
-    console.log(`computer is ${computerSelection} | you are ${userSelection}`);
+function playRound(playerSelection, computerSelection){
     // create if statment to compare the gameplay
-    if(((userSelection == "paper" && computerSelection == "rock") || (userSelection == "scissor" && computerSelection == "paper" ) || (userSelection == "rock" && computerSelection == "scissor"))){
+    console.log(`computer is ${computerSelection} | you are ${playerSelection}`)
+    if(((playerSelection == "paper" && computerSelection == "rock") || (playerSelection == "scissor" && computerSelection == "paper" ) || (playerSelection == "rock" && computerSelection == "scissor"))){
         console.log("user wins!");
-    } else if ((userSelection == "rock" && computerSelection == "paper") || (userSelection == "paper" && computerSelection == "scissor" ) || (userSelection == "scissor" && computerSelection == "rock")){
+    } else if ((playerSelection == "rock" && computerSelection == "paper") || (playerSelection == "paper" && computerSelection == "scissor" ) || (playerSelection == "scissor" && computerSelection == "rock")){
         console.log("Computer wins! ");
-    } else 
+    }else if(playerSelection === computerSelection){
         console.log("its a tie");
+    } 
     
 }
-singleRoundPlay();
+const playerSelection = GetUserChoice();
+const computerSelection = getComputerChoice();
+console.log(playRound(playerSelection,computerSelection));
 
 
