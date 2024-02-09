@@ -46,6 +46,7 @@ function playRound(playerSelection, computerSelection){
     } 
     
 }
+// create variables and assign computer and user selection return values
 const playerSelection = GetUserChoice();
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection,computerSelection));
